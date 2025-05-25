@@ -17,15 +17,21 @@ python sulama_sistemi.py
 - ✅ Kullanıcıdan alınan verilerle **anında hesaplama**  
 - ✅ **Matplotlib** ile girdi ve çıktı **üyelik fonksiyonu grafikleri**  
 - ✅ **Tkinter tabanlı sekmeli GUI**:
+---
+  ### 📥 Giriş Sekmesi
+  - ![  - 📥 Giriş Sekmesi ](https://github.com/nnisabie/hanifebiber/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-25%20231719.png?raw=true)
 
-  - 📥 Giriş Sekmesi  
-  - 📊 Girdi Grafikler Sekmesi  
-  - 📈 Çıktı Grafikler Sekmesi
+  ### 📊 Girdi Grafikler Sekmesi
+  - ![📊 Girdi Grafikler Sekmesi ](https://github.com/nnisabie/hanifebiber/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-25%20231821.png?raw=true)
+
+  ### 📈 Çıktı Grafikler Sekmesi
+  - ![📈 Çıktı Grafikler Sekmesi](https://github.com/nnisabie/hanifebiber/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-25%20231844.png?raw=true)
 
 
 
 
-![Açıklama metni](https://github.com/nnisabie/hanifebiber/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-25%20231719.png?raw=true)
+
+
 
 ---
 

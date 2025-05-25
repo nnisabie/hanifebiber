@@ -1,41 +1,65 @@
+# 🌱 Akıllı Sulama Sistemi (Bulanık Mantık Tabanlı)
 
-#🌱 Akıllı Sulama Sistemi (Bulanık Mantık Tabanlı)
-Bu proje, toprak nemi, hava sıcaklığı, rüzgar hızı, yağmur olasılığı ve bitki türüne göre sulama süresi ve sıklığını bulanık mantık ile hesaplayan, kullanıcı arayüzü (GUI) olan bir akıllı sulama sistemidir.
+Bu proje, **toprak nemi**, **hava sıcaklığı**, **rüzgar hızı**, **yağmur olasılığı** ve **bitki türüne** göre **sulama süresi** ve **sıklığını** bulanık mantık ile hesaplayan, kullanıcı dostu grafik arayüzüne (GUI) sahip bir **akıllı sulama sistemidir**.
 
-#📌 Proje Özellikleri
-Bulanık Mantık Modeli kullanılarak sulama süresi ve sıklığı hesaplanır.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-orange.svg)
+![Fuzzy](https://img.shields.io/badge/FuzzyLogic-skfuzzy-purple.svg)
 
-Kullanıcıdan giriş alınarak hesaplama yapılır.
+---
+```bash
+python sulama_sistemi.py
+```
 
-Matplotlib ile girdi ve çıktı üyelik fonksiyonları grafiksel olarak gösterilir.
+## 📌 Proje Özellikleri
 
-Tkinter ile sekmeli GUI arayüz sunar:
+- ✅ **Bulanık Mantık Modeli** ile sulama süresi ve sıklığı tahmini  
+- ✅ Kullanıcıdan alınan verilerle **anında hesaplama**  
+- ✅ **Matplotlib** ile girdi ve çıktı **üyelik fonksiyonu grafikleri**  
+- ✅ **Tkinter tabanlı sekmeli GUI**:
 
-Giriş sekmesi
+  - 📥 Giriş Sekmesi  
+  - 📊 Girdi Grafikler Sekmesi  
+  - 📈 Çıktı Grafikler Sekmesi
 
-Girdi grafikler sekmesi
+---
 
-Çıktı grafikler sekmesi
+## 🧠 Kullanılan Değişkenler
 
-#🧠 Kullanılan Değişkenler
-Girdi Değişkenleri:
-Toprak Nemi (%)
+### 🔹 Girdi Değişkenleri
 
-Hava Sıcaklığı (°C)
+| Değişken           | Açıklama                  |
+|--------------------|---------------------------|
+| Toprak Nemi (%)    | 0 – 100 arası              |
+| Hava Sıcaklığı (°C)| 0 – 50 arası               |
+| Rüzgar Hızı (km/h) | 0 – 30 arası               |
+| Yağmur Olasılığı (%) | 0 – 100 arası            |
+| Bitki Türü         | Sebze, Meyve, Tahıl       |
 
-Rüzgar Hızı (km/h)
+### 🔸 Çıktı Değişkenleri
 
-Yağmur Olasılığı (%)
+| Değişken            | Değer Aralığı  | Etiketler          |
+|---------------------|----------------|---------------------|
+| Sulama Süresi (dk)  | 0 – 60         | Kısa, Orta, Uzun    |
+| Sulama Sıklığı (kez/gün)| 1 – 3     | Az, Orta, Sık       |
 
-Bitki Türü: Sebze, Meyve, Tahıl
+---
 
-Çıktı Değişkenleri:
-Sulama Süresi (dk): Kısa, Orta, Uzun
+## 🧾 Kural Sistemi
 
-Sulama Sıklığı (kez/gün): Az, Orta, Sık
+Toplamda **5 adet bulanık kural** ile sistem davranışı belirlenmiştir.
 
-#📐 Kurallar
-Sistemde 5 temel bulanık kural bulunmaktadır. Örneğin:
+### Örnek Kural:
 
-Eğer toprak nemi düşük, hava sıcaklığı sıcak ve yağmur olasılığı düşükse;
-sulama süresi uzun, sulama sıklığı sık olur.
+> 🔸 **Eğer** toprak nemi düşük, hava sıcaklığı sıcak ve yağmur olasılığı düşükse  
+> 🔸 **O zaman** sulama süresi uzun, sulama sıklığı sık olur.
+
+---
+
+
+---
+
+## 🔧 Gereksinimler
+
+```bash
+pip install numpy matplotlib scikit-fuzzy

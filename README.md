@@ -1,1 +1,65 @@
-# hanifebiber
+# 🌱 Akıllı Sulama Sistemi (Bulanık Mantık Tabanlı)
+
+Bu proje, **toprak nemi**, **hava sıcaklığı**, **rüzgar hızı**, **yağmur olasılığı** ve **bitki türüne** göre **sulama süresi** ve **sıklığını** bulanık mantık ile hesaplayan, kullanıcı dostu grafik arayüzüne (GUI) sahip bir **akıllı sulama sistemidir**.
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![GUI](https://img.shields.io/badge/GUI-Tkinter-orange.svg)
+![Fuzzy](https://img.shields.io/badge/FuzzyLogic-skfuzzy-purple.svg)
+
+---
+```bash
+python sulama_sistemi.py
+```
+
+## 📌 Proje Özellikleri
+
+- ✅ **Bulanık Mantık Modeli** ile sulama süresi ve sıklığı tahmini  
+- ✅ Kullanıcıdan alınan verilerle **anında hesaplama**  
+- ✅ **Matplotlib** ile girdi ve çıktı **üyelik fonksiyonu grafikleri**  
+- ✅ **Tkinter tabanlı sekmeli GUI**:
+
+  - 📥 Giriş Sekmesi  
+  - 📊 Girdi Grafikler Sekmesi  
+  - 📈 Çıktı Grafikler Sekmesi
+
+---
+
+## 🧠 Kullanılan Değişkenler
+
+### 🔹 Girdi Değişkenleri
+
+| Değişken           | Açıklama                  |
+|--------------------|---------------------------|
+| Toprak Nemi (%)    | 0 – 100 arası              |
+| Hava Sıcaklığı (°C)| 0 – 50 arası               |
+| Rüzgar Hızı (km/h) | 0 – 30 arası               |
+| Yağmur Olasılığı (%) | 0 – 100 arası            |
+| Bitki Türü         | Sebze, Meyve, Tahıl       |
+
+### 🔸 Çıktı Değişkenleri
+
+| Değişken            | Değer Aralığı  | Etiketler          |
+|---------------------|----------------|---------------------|
+| Sulama Süresi (dk)  | 0 – 60         | Kısa, Orta, Uzun    |
+| Sulama Sıklığı (kez/gün)| 1 – 3     | Az, Orta, Sık       |
+
+---
+
+## 🧾 Kural Sistemi
+
+Toplamda **5 adet bulanık kural** ile sistem davranışı belirlenmiştir.
+
+### Örnek Kural:
+
+> 🔸 **Eğer** toprak nemi düşük, hava sıcaklığı sıcak ve yağmur olasılığı düşükse  
+> 🔸 **O zaman** sulama süresi uzun, sulama sıklığı sık olur.
+
+---
+
+
+---
+
+## 🔧 Gereksinimler
+
+```bash
+pip install numpy matplotlib scikit-fuzzy

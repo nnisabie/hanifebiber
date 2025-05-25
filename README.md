@@ -22,6 +22,11 @@ python sulama_sistemi.py
   - 📊 Girdi Grafikler Sekmesi  
   - 📈 Çıktı Grafikler Sekmesi
 
+
+
+
+![Açıklama metni](https://github.com/nnisabie/hanifebiber/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-25%20231719.png?raw=true)
+
 ---
 
 ## 🧠 Kullanılan Değişkenler
